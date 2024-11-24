@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment and Trip Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="header-content">
+      <h1>Book Your Trip</h1>
+      <p>Enter your destination and pay to proceed</p>
+    </div>
+    <!-- Pay Button -->
+    <button id="payButton" class="pay-button">Pay for Recommendations</button>
+  </header>
+
+  <div class="search">
+    <input type="text" id="destination" placeholder="Enter your destination">
+    <button id="searchButton">Search</button>
+  </div>
+
+  <!-- Travel Information -->
+  <div class="travel-info">
+    <h2>Available Destinations</h2>
+    <p id="recommendations">Please make a payment to proceed with the trip booking (optional).</p>
+  </div>
+
+  <!-- Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="script.js"></script>
+</body>
+</html>
